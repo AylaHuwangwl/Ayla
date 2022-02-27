@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://huangwanling.gitee.io/ayla/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://huangwanling.gitee.io/ayla/blog/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2022-02-07</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://huangwanling.gitee.io/ayla/2022/02/26/hello-world/</loc>
+    <loc>https://huangwanling.gitee.io/ayla/blog/2022/02/26/hello-world/</loc>
     
     <lastmod>2022-02-06</lastmod>
     
@@ -21,7 +21,7 @@
   
 
   <url>
-    <loc>https://huangwanling.gitee.io/ayla</loc>
+    <loc>https://huangwanling.gitee.io/ayla/blog</loc>
     <lastmod>2022-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

@@ -3,11 +3,11 @@
   <title>小黑铃铛</title>
   
   <subtitle>把每句&quot;我不会&quot;都改成&quot;我可以学&quot;</subtitle>
-  <link href="https://huangwanling.gitee.io/ayla/atom.xml" rel="self"/>
+  <link href="https://huangwanling.gitee.io/ayla/blog/atom.xml" rel="self"/>
   
-  <link href="https://huangwanling.gitee.io/ayla/"/>
+  <link href="https://huangwanling.gitee.io/ayla/blog/"/>
   <updated>2022-02-06T08:26:46.000Z</updated>
-  <id>https://huangwanling.gitee.io/ayla/</id>
+  <id>https://huangwanling.gitee.io/ayla/blog/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://huangwanling.gitee.io/ayla/2022/02/26/hello-world/"/>
-    <id>https://huangwanling.gitee.io/ayla/2022/02/26/hello-world/</id>
+    <link href="https://huangwanling.gitee.io/ayla/blog/2022/02/26/hello-world/"/>
+    <id>https://huangwanling.gitee.io/ayla/blog/2022/02/26/hello-world/</id>
     <published>2022-02-26T08:24:41.649Z</published>
     <updated>2022-02-06T08:26:46.000Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>我的第一遍博客</title>
-    <link href="https://huangwanling.gitee.io/ayla/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://huangwanling.gitee.io/ayla/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://huangwanling.gitee.io/ayla/blog/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://huangwanling.gitee.io/ayla/blog/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/</id>
     <published>2022-02-07T05:41:23.000Z</published>
     <updated>2022-02-07T05:55:00.000Z</updated>
     
