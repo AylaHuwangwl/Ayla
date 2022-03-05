@@ -6,67 +6,30 @@
   <link href="https://huangwanling.gitee.io/ayla/atom.xml" rel="self"/>
   
   <link href="https://huangwanling.gitee.io/ayla/"/>
-  <updated>2022-03-01T07:00:07.763Z</updated>
+  <updated>2022-03-05T16:12:49.449Z</updated>
   <id>https://huangwanling.gitee.io/ayla/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Ayla</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue</title>
-    <link href="https://huangwanling.gitee.io/ayla/2022/03/01/vue/"/>
-    <id>https://huangwanling.gitee.io/ayla/2022/03/01/vue/</id>
-    <published>2022-03-01T07:00:07.000Z</published>
-    <updated>2022-03-01T07:00:07.763Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
+    <title>Hello MyBlog</title>
     <link href="https://huangwanling.gitee.io/ayla/2022/02/26/hello-world/"/>
     <id>https://huangwanling.gitee.io/ayla/2022/02/26/hello-world/</id>
     <published>2022-02-26T08:24:41.649Z</published>
-    <updated>2022-02-06T08:26:46.000Z</updated>
+    <updated>2022-03-05T16:12:49.449Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一遍博客</title>
-    <link href="https://huangwanling.gitee.io/ayla/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://huangwanling.gitee.io/ayla/2022/02/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2/</id>
-    <published>2022-02-07T05:41:23.000Z</published>
-    <updated>2022-02-07T05:55:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>##第一章<br>内容</p><hr><p>##第二章<br>内容</p><hr><p>##参考文献<br><a href="http://www.codesheep.cn/">www.codesheep.cn</a></p>]]></content>
+    <content type="html"><![CDATA[<p>这是搭建博客后的第一篇文章，该博客主要分享和记录自己学习前端的心得，不定期更新。<br>保留下方hexo的相关命令，以防自己忘记的时候方便查看</p><h3 id="Create-new-blog"><a href="#Create-new-blog" class="headerlink" title="Create new blog"></a>Create new blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;##第一章&lt;br&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##第二章&lt;br&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##参考文献&lt;br&gt;&lt;a href=&quot;http://www.codesheep.cn/&quot;&gt;www.codesheep.cn&lt;/a&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;这是搭建博客后的第一篇文章，该博客主要分享和记录自己学习前端的心得，不定期更新。&lt;br&gt;保留下方hexo的相关命令，以防自己忘记的时候方便查看&lt;/p&gt;
+&lt;h3 id=&quot;Create-new-blog&quot;&gt;&lt;a href=&quot;#Create-new-blog&quot; class=&quot;he</summary>
       
     
     
