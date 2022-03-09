@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huangwanling.gitee.io/ayla">
-  <title>前端面试题（一） | 小黑铃铛</title>
+  <title>supermarket项目注意事项（二） | 小黑铃铛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x3D;&#x3D;tips:自己学了快三个月的前端知识，前端三剑客和vue都学过了，但还没有做过系统的复习，金三银四正在开展中，目前正在加快速度复习基础知识点和准备简历&#x3D;&#x3D;">
+  <meta name="description" content="1、上拉加载更多数据：①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件this.$emit(&#39;pullingUp&#39;)传到父组件中③父组件监听事件并创建一个loadMore()方法④loadMore() &amp;#123; this.getHomeGoods(this.currentType); &amp;#125;，ge">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端面试题（一）">
-<meta property="og:url" content="https://huangwanling.gitee.io/ayla/2022/03/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
+<meta property="og:title" content="supermarket项目注意事项（二）">
+<meta property="og:url" content="https://huangwanling.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="小黑铃铛">
-<meta property="og:description" content="&#x3D;&#x3D;tips:自己学了快三个月的前端知识，前端三剑客和vue都学过了，但还没有做过系统的复习，金三银四正在开展中，目前正在加快速度复习基础知识点和准备简历&#x3D;&#x3D;">
+<meta property="og:description" content="1、上拉加载更多数据：①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件this.$emit(&#39;pullingUp&#39;)传到父组件中③父组件监听事件并创建一个loadMore()方法④loadMore() &amp;#123; this.getHomeGoods(this.currentType); &amp;#125;，ge">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-08T04:50:27.000Z">
-<meta property="article:modified_time" content="2022-03-09T07:30:23.232Z">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h03nukatq4j20lh09eq5f.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h03nxab91fj20jq07d0va.jpg">
+<meta property="article:published_time" content="2022-03-09T05:47:45.000Z">
+<meta property="article:modified_time" content="2022-03-09T07:31:20.224Z">
 <meta property="article:author" content="Ayla">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://tva1.sinaimg.cn/large/6929716cly1h03nukatq4j20lh09eq5f.jpg">
   
     <link rel="alternative" href="/atom.xml" title="小黑铃铛" type="application/atom+xml">
   
@@ -162,14 +165,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-前端面试题（一）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-supermarket项目注意事项（二）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端面试题（一）
+      supermarket项目注意事项（二）
     </h1>
   
 
@@ -184,26 +187,19 @@
   </a>
   
         
-        <a href="/ayla/2022/03/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2022-03-08T04:50:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-08</time>
+        <a href="/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2022-03-09T05:47:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x3D;&#x3D;tips:自己学了快三个月的前端知识，前端三剑客和vue都学过了，但还没有做过系统的复习，金三银四正在开展中，目前正在加快速度复习基础知识点和准备简历&#x3D;&#x3D;</p>
+        <h5 id="1、上拉加载更多数据："><a href="#1、上拉加载更多数据：" class="headerlink" title="1、上拉加载更多数据："></a>1、上拉加载更多数据：</h5><p>①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件<code>this.$emit(&#39;pullingUp&#39;)</code>传到父组件中③父组件监听事件并创建一个loadMore()方法④<code>loadMore() &#123; this.getHomeGoods(this.currentType); &#125;</code>，getHomeGoods（）封装了tabControl三个按钮需要传输的数据</p>
 <span id="more"></span>
 
-<h3 id="一、HTML篇（一）"><a href="#一、HTML篇（一）" class="headerlink" title="一、HTML篇（一）"></a>一、HTML篇（一）</h3><h4 id="1、说一下http和https"><a href="#1、说一下http和https" class="headerlink" title="1、说一下http和https"></a>1、说一下http和https</h4><p>http: 超文本传输协议，是互联网上应用最为广泛的一种网络协议，是一个客户端和服务器端请求和应答的标准（TCP），用于从 WWW 服务器传输超文本到本地浏览器的传 输协议，它可以使浏览器更加高效，使网络传输减少。 https: 是以安全为目标的 HTTP 通道，简单讲是 HTTP的安全版，即 HTTP 下加入 SSL层，HTTPS 的安全基础是 SSL，因此加密的详细内容就需要 SSL。https 协议的主要作用是：建立一个信息安全通道，来确保数组的传输，确保网站的真实性。</p>
-<h4 id="2、说一下http和https的区别"><a href="#2、说一下http和https的区别" class="headerlink" title="2、说一下http和https的区别"></a>2、说一下http和https的区别</h4><p>http 传输的数据都是未加密的，也就是明文的，网景公司设置了 SSL 协议来对 http 协议 传输的数据进行加密处理，简单来说 https 协议是由 http 和 ssl 协议构建的可进行加密传 输和身份认证的网络协议，比 http 协议的安全性更高。 主要的区别如下： Https 协议需要 ca 证书，费用较高。 http 是超文本传输协议，信息是明文传输，https 则是具有安全性的 ssl 加密传输协议。 使用不同的链接方式，端口也不同，一般而言，http 协议的端口为 80，https 的端口为 443 http 的连接很简单，是无状态的；HTTPS 协议是由 SSL+HTTP 协议构建的可进行加密传 输、身份认证的网络协议，比 http 协议安全。</p>
-<h4 id="3、src和href的区别"><a href="#3、src和href的区别" class="headerlink" title="3、src和href的区别"></a>3、src和href的区别</h4><p>src ⽤于替换当前元素，href ⽤于在当前⽂档和引⽤资源之间确⽴联系。<br>src 是 source 的缩写，指向外部资源的位置，指向的内容将会嵌⼊到⽂档中当前标签所在位置；在请求 src 资源时会将其指向的资源下载并应⽤到⽂档内，例如 js 脚本，img 图⽚和 frame 等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执⾏完毕，图⽚ 和框架等元素也如此，类似于将所指向资源嵌⼊当前标签内。这也是为什么将js 脚本放在底部⽽不是头部。<br>href 指向⽹络资源所在位置，建⽴和当前元素（锚点）或当前⽂档 （链接）之间的链接，在文档中添加href比如<link href="common.css" rel="stylesheet">,浏览器就会识别该文档为css文件然后并行下载资源但不会停止对当前文档的处理，这也是为 什么建议使⽤ link ⽅式来加载 css，⽽不是使⽤@import ⽅式。</p>
-<h4 id="4、HTML语义化的理解"><a href="#4、HTML语义化的理解" class="headerlink" title="4、HTML语义化的理解"></a>4、HTML语义化的理解</h4><p>语义化是根据内容的结构化区选择合适的标签，像h5提供的语义化标签有<code>&lt;nav&gt;&lt;header&gt;&lt;fooyer&gt;&lt;main&gt;&lt;section&gt;</code>等等，对开发者友好，增强了代码的可读性，结构更加清晰，开发者能清晰的看出⽹⻚的结构， 便于团队的开发与维护。</p>
-<h4 id="5、DOCTYPE-⽂档类型-的作⽤"><a href="#5、DOCTYPE-⽂档类型-的作⽤" class="headerlink" title="5、DOCTYPE(⽂档类型) 的作⽤"></a>5、DOCTYPE(⽂档类型) 的作⽤</h4><p>DOCTYPE是HTML5中⼀种标准通⽤标记语⾔的⽂档类型声明，它的⽬的是告诉浏览器（解析器）应该 以什么样（html或xhtml）的⽂档类型定义来解析⽂档，不同的渲染模式会影响浏览器对 CSS 代码甚 ⾄ JavaScript 脚本的解析。它必须声明在HTML⽂档的第⼀⾏。</p>
-<h4 id="6、script标签中defer和async的区别"><a href="#6、script标签中defer和async的区别" class="headerlink" title="6、script标签中defer和async的区别"></a>6、script标签中defer和async的区别</h4><p>如果没有defer或async属性，浏览器会⽴即加载并执⾏相应的脚本。它不会等待后续加载的⽂档元素， 读取到就会开始加载和执⾏，这样就阻塞了后续⽂档的加载。defer 和 async属性都是去异步加载外部的JS脚本⽂件，它们都不会阻塞⻚⾯的解析，其区别如下： 执⾏顺序：多个带async属性的标签，不能保证加载的顺序；多个带defer属性的标签，按照加载顺 序执⾏； 脚本是否并⾏执⾏：async属性，表示后续⽂档的加载和执⾏与js脚本的加载和执⾏是并⾏进⾏的， 即异步执⾏；defer属性，加载后续⽂档的过程和js脚本的加载(此时仅加载不执⾏)是并⾏进⾏的(异 步)，js脚本需要等到⽂档所有元素解析完成之后才执⾏，DOMContentLoaded事件触发执⾏之 前。</p>
-<h4 id="7、常用的meta标签"><a href="#7、常用的meta标签" class="headerlink" title="7、常用的meta标签"></a>7、常用的meta标签</h4><p>meta 标签由 name 和 content 属性定义，⽤来描述⽹⻚⽂档的属性<br>charset ，⽤来描述HTML⽂档的编码类型：<br>keywords ，⻚⾯关键词：<br>description ，⻚⾯描述<br>refresh ，⻚⾯重定向和刷新：<br>viewport ，适配移动端，可以控制视⼝的⼤⼩和⽐例：</p>
-<h4 id="8、H5有哪些更新"><a href="#8、H5有哪些更新" class="headerlink" title="8、H5有哪些更新"></a>8、H5有哪些更新</h4><p>1、语义化标签（<code>&lt;nav&gt;&lt;header&gt;&lt;fooyer&gt;&lt;main&gt;&lt;section&gt;</code>）<br>2、媒体标签：<br> audio：⾳频、video：视频、source标签（因为浏览器对视频格式⽀持程度不⼀样，为了能够兼容不同的浏览器，可以通过source来指定视频源）<br> 3、dom查询操作：<br> document.querySelector() document.querySelectorAll() 它们选择的对象可以是标签，可以是类(需要加点)，可以是ID(需要加#)<br> 4、web存储：<br> HTML5 提供了两种在客户端存储数据的新⽅法： localStorage - 没有时间限制的数据存储 sessionStorage - 针对⼀个 session 的数据存储<br> 5、input标签新增了属性：placeholder、autocomplete、autofocus、required</p>
-<h4 id="9、⾏内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#9、⾏内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="9、⾏内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>9、⾏内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h4><p> ⾏内元素有： a b span img input select strong ；<br> 块级元素有： div ul ol li dl dt dd h1 h2 h3 h4 h5 h6 p ；<br> 常⻅的空元素有：<code>&lt;br&gt;、&lt;hr&gt; 、 &lt;img&gt; 、 &lt;input&gt; 、 &lt;link&gt; 、 &lt;meta&gt; </code></p>
+<h5 id="2、tabControl的吸顶效果实现："><a href="#2、tabControl的吸顶效果实现：" class="headerlink" title="2、tabControl的吸顶效果实现："></a>2、tabControl的吸顶效果实现：</h5><p>1、必需知道滚动到多少时开始有吸顶效果：获取tabControl的offsetTop(获取当前元素定位的父元素位置 )<br>2、所有组件都有一个属性$el：用于获取组件里面的元素<br><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nukatq4j20lh09eq5f.jpg" alt="offsetTop.png"></p>
+<h5 id="3、监听滚动，动态的改变tabControl的样式"><a href="#3、监听滚动，动态的改变tabControl的样式" class="headerlink" title="3、监听滚动，动态的改变tabControl的样式"></a>3、监听滚动，动态的改变tabControl的样式</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nxab91fj20jq07d0va.jpg" alt="改变tabcontrol样式.png"></p>
 
       
 
@@ -293,7 +289,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=vhttps://huangwanling.gitee.io/ayla/.gitee.io/ayla/2022/03/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=vhttps://huangwanling.gitee.io/ayla/.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,18 +303,9 @@
   
 <nav id="article-nav">
   
-    <a href="/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          supermarket项目注意事项（二）
-        
-      </div>
-    </a>
   
-  
-    <a href="/ayla/2022/03/08/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">supermarket项目注意事项</div>
+    <a href="/ayla/2022/03/08/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端面试题（一）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -345,7 +332,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81HTML%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、HTML篇（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%B4%E4%B8%80%E4%B8%8Bhttp%E5%92%8Chttps"><span class="toc-number">1.1.</span> <span class="toc-text">1、说一下http和https</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%B4%E4%B8%80%E4%B8%8Bhttp%E5%92%8Chttps%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.</span> <span class="toc-text">2、说一下http和https的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81src%E5%92%8Chref%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.3.</span> <span class="toc-text">3、src和href的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81HTML%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.4.</span> <span class="toc-text">4、HTML语义化的理解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81DOCTYPE-%E2%BD%82%E6%A1%A3%E7%B1%BB%E5%9E%8B-%E7%9A%84%E4%BD%9C%E2%BD%A4"><span class="toc-number">1.5.</span> <span class="toc-text">5、DOCTYPE(⽂档类型) 的作⽤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6%E3%80%81script%E6%A0%87%E7%AD%BE%E4%B8%ADdefer%E5%92%8Casync%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.6.</span> <span class="toc-text">6、script标签中defer和async的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7%E3%80%81%E5%B8%B8%E7%94%A8%E7%9A%84meta%E6%A0%87%E7%AD%BE"><span class="toc-number">1.7.</span> <span class="toc-text">7、常用的meta标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8%E3%80%81H5%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9B%B4%E6%96%B0"><span class="toc-number">1.8.</span> <span class="toc-text">8、H5有哪些更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9%E3%80%81%E2%BE%8F%E5%86%85%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F-%E7%A9%BA-void-%E5%85%83%E7%B4%A0%E6%9C%89%E9%82%A3%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.9.</span> <span class="toc-text">9、⾏内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E4%B8%8A%E6%8B%89%E5%8A%A0%E8%BD%BD%E6%9B%B4%E5%A4%9A%E6%95%B0%E6%8D%AE%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">1、上拉加载更多数据：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81tabControl%E7%9A%84%E5%90%B8%E9%A1%B6%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">2、tabControl的吸顶效果实现：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E7%9B%91%E5%90%AC%E6%BB%9A%E5%8A%A8%EF%BC%8C%E5%8A%A8%E6%80%81%E7%9A%84%E6%94%B9%E5%8F%98tabControl%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">3、监听滚动，动态的改变tabControl的样式</span></a></li></ol>
                     </div>
                 </span>
             </div>
