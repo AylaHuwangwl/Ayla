@@ -6,7 +6,7 @@
   <link href="https://huangwanling.gitee.io/ayla/atom.xml" rel="self"/>
   
   <link href="https://huangwanling.gitee.io/ayla/"/>
-  <updated>2022-03-09T07:31:20.224Z</updated>
+  <updated>2022-03-09T16:13:46.106Z</updated>
   <id>https://huangwanling.gitee.io/ayla/</id>
   
   <author>
@@ -17,13 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端面试题（二）</title>
+    <link href="https://huangwanling.gitee.io/ayla/2022/03/09/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>https://huangwanling.gitee.io/ayla/2022/03/09/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <published>2022-03-09T15:27:02.000Z</published>
+    <updated>2022-03-09T16:13:46.106Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x3D;&#x3D;    前端经典面试题，视频来源B站<a href="https://www.bilibili.com/video/BV1ek4y1r7GT?from=search&amp;seid=3043085217816960051&amp;spm_id_from=333.337.0.0%EF%BC%8C%E5%8F%82%E8%80%83%E5%8D%9A%E5%AE%A2https://blog.csdn.net/mus123/article/details/106499506">https://www.bilibili.com/video/BV1ek4y1r7GT?from=search&amp;seid=3043085217816960051&amp;spm_id_from=333.337.0.0，参考博客https://blog.csdn.net/mus123/article/details/106499506</a>   &#x3D;&#x3D;</p><h5 id="1、标签语义化：合理的标签干合适的事情"><a href="#1、标签语义化：合理的标签干合适的事情" class="headerlink" title="1、标签语义化：合理的标签干合适的事情"></a>1、标签语义化：合理的标签干合适的事情</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h042falydej20im0k67ak.jpg" alt="2022-03-09_234942.png"></p><blockquote><p>块级（display：block）：div 、p、h1~h6、hr、ul、ol、li、dl、dd、form、table、header、footer、main、nav、sector、arcitcle、pre、table、tbody、thead、th、tr、tfoot<br>行级（display：inline）：a、span、small、strong、em、i、code、<br>行内块（display：inline-block）：img、input</p></blockquote><blockquote><p>区别：<br>1.行内元素与块级元素可以相互转换，通过修改display属性值来切换块级元素和行内元素，行内元素display：inline，块级元素display：block。<br>2.行内元素和其他行内元素都会在一条水平线上排列，都是在同一行的；块级元素却总是会在新的一行开始排列，各个块级元素独占一行，垂直向下排列，若想使其水平方向排序，可使用左右浮动（float：left&#x2F;right）让其水平方向排列。<br>3.行内元素不可以设置宽高，宽度高度随文本内容的变化而变化，但是可以设置行高（line-height），同时在设置外边距margin上下无效，左右有效，内填充padding上下无效，左右有效；块级元素可以设置宽高，并且宽度高度以及外边距，内填充都可随意控制。<br>4.块级元素可以包含行内元素和块级元素，还可以容纳内联元素和其他元素；行内元素不能包含块级元素，只能容纳文本或者其他行内元素。</p></blockquote><blockquote><p>display还有none（隐藏dom）、flex（弹性）、table（表）<br>让一个元素隐藏：display：none、visibility：hidden、ocpacity（透明度，取值从0.0~1.0）：0、兼容的filter :filter:alpha(opacity&#x3D;number)<br>filter滤镜：对比度、饱和度、阴影、色相、透明度</p></blockquote><blockquote><p>display：flex 响应式、兼容性</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&amp;#x3D;&amp;#x3D;    前端经典面试题，视频来源B站&lt;a href=&quot;https://www.bilibili.com/video/BV1ek4y1r7GT?from=search&amp;amp;seid=3043085217816960051&amp;amp;spm_id_fr</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>supermarket项目注意事项（二）</title>
     <link href="https://huangwanling.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>https://huangwanling.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
     <published>2022-03-09T05:47:45.000Z</published>
-    <updated>2022-03-09T07:31:20.224Z</updated>
+    <updated>2022-03-09T09:25:17.780Z</updated>
     
-    <content type="html"><![CDATA[<h5 id="1、上拉加载更多数据："><a href="#1、上拉加载更多数据：" class="headerlink" title="1、上拉加载更多数据："></a>1、上拉加载更多数据：</h5><p>①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件<code>this.$emit(&#39;pullingUp&#39;)</code>传到父组件中③父组件监听事件并创建一个loadMore()方法④<code>loadMore() &#123; this.getHomeGoods(this.currentType); &#125;</code>，getHomeGoods（）封装了tabControl三个按钮需要传输的数据</p><span id="more"></span><h5 id="2、tabControl的吸顶效果实现："><a href="#2、tabControl的吸顶效果实现：" class="headerlink" title="2、tabControl的吸顶效果实现："></a>2、tabControl的吸顶效果实现：</h5><p>1、必需知道滚动到多少时开始有吸顶效果：获取tabControl的offsetTop(获取当前元素定位的父元素位置 )<br>2、所有组件都有一个属性$el：用于获取组件里面的元素<br><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nukatq4j20lh09eq5f.jpg" alt="offsetTop.png"></p><h5 id="3、监听滚动，动态的改变tabControl的样式"><a href="#3、监听滚动，动态的改变tabControl的样式" class="headerlink" title="3、监听滚动，动态的改变tabControl的样式"></a>3、监听滚动，动态的改变tabControl的样式</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nxab91fj20jq07d0va.jpg" alt="改变tabcontrol样式.png"></p>]]></content>
+    <content type="html"><![CDATA[<h5 id="1、上拉加载更多数据："><a href="#1、上拉加载更多数据：" class="headerlink" title="1、上拉加载更多数据："></a>1、上拉加载更多数据：</h5><p>①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件<code>this.$emit(&#39;pullingUp&#39;)</code>传到父组件中③父组件监听事件并创建一个loadMore()方法④<code>loadMore() &#123; this.getHomeGoods(this.currentType); &#125;</code>，getHomeGoods（）封装了tabControl三个按钮需要传输的数据</p><span id="more"></span><h5 id="2、tabControl的吸顶效果实现："><a href="#2、tabControl的吸顶效果实现：" class="headerlink" title="2、tabControl的吸顶效果实现："></a>2、tabControl的吸顶效果实现：</h5><p>1、必需知道滚动到多少时开始有吸顶效果：获取tabControl的offsetTop(获取当前元素定位的父元素位置 )<br>2、所有组件都有一个属性$el：用于获取组件里面的元素<br><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nukatq4j20lh09eq5f.jpg" alt="offsetTop.png"></p><h5 id="3、监听滚动，动态的改变tabControl的样式"><a href="#3、监听滚动，动态的改变tabControl的样式" class="headerlink" title="3、监听滚动，动态的改变tabControl的样式"></a>3、监听滚动，动态的改变tabControl的样式</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h03nxab91fj20jq07d0va.jpg" alt="改变tabcontrol样式.png"></p><h5 id="4、在首页跳转到其他页面后再回去首页重新加载的问题"><a href="#4、在首页跳转到其他页面后再回去首页重新加载的问题" class="headerlink" title="4、在首页跳转到其他页面后再回去首页重新加载的问题"></a>4、在首页跳转到其他页面后再回去首页重新加载的问题</h5><p>  让home保持原有的状态，不随意销毁掉：keep-alive</p>]]></content>
     
     
     <summary type="html">&lt;h5 id=&quot;1、上拉加载更多数据：&quot;&gt;&lt;a href=&quot;#1、上拉加载更多数据：&quot; class=&quot;headerlink&quot; title=&quot;1、上拉加载更多数据：&quot;&gt;&lt;/a&gt;1、上拉加载更多数据：&lt;/h5&gt;&lt;p&gt;①先监听什么时候滚动到底部，在scroll.vue中监听②监听到滚动到底部后用子传父组件通信办法将scroll中的自定义事件&lt;code&gt;this.$emit(&amp;#39;pullingUp&amp;#39;)&lt;/code&gt;传到父组件中③父组件监听事件并创建一个loadMore()方法④&lt;code&gt;loadMore() &amp;#123; this.getHomeGoods(this.currentType); &amp;#125;&lt;/code&gt;，getHomeGoods（）封装了tabControl三个按钮需要传输的数据&lt;/p&gt;</summary>
