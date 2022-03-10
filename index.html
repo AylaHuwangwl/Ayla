@@ -160,6 +160,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-前端面试题（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/">前端面试题（三）</a>
+    </h1>
+  
+
+<!--显示阅读次数-->
+
+        
+        <a href="/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2022-03-10T07:06:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、JS篇（一）"><a href="#一、JS篇（一）" class="headerlink" title="一、JS篇（一）"></a>一、JS篇（一）</h2><h5 id="1、堆栈内存"><a href="#1、堆栈内存" class="headerlink" title="1、堆栈内存"></a>1、堆栈内存</h5><p>堆：存储引用类型值的空间<br>栈：存储基本类型和指定代码的环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">let</span> a = &#123;&#125;,b = <span class="string">&#x27;0&#x27;</span>,c = 0;</span><br><span class="line">    a[b] = <span class="string">&#x27;woaaa&#x27;</span>;</span><br><span class="line">    a[c] = <span class="string">&quot;asadc&quot;</span>;</span><br><span class="line">    console.log(a[b]);</span><br><span class="line">//答案：培训,一个堆中属性名不能重复，且一般是字符串，数字属性名==字符串属性名 </span><br></pre></td></tr></table></figure>
+<p><img src="/ayla/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/Study_Vue/Vue(视频学习资料)/img/image-20220311004858837.png" alt="image-20220311004858837"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> a = &#123;&#125;,b = Symbol(<span class="string">&#x27;1&#x27;</span>),c = Symbol(<span class="string">&#x27;1&#x27;</span>);</span><br><span class="line">a[b] = <span class="string">&#x27;珠峰&#x27;</span>；</span><br><span class="line">a[c] = <span class="string">&#x27;培训&#x27;</span>；</span><br><span class="line">console.log(a[b]);</span><br><span class="line">//答案：珠峰，Symbol的特点，都是唯一的</span><br><span class="line">//一个对象的属性名可以是Symbol,undefined,null,boolean... </span><br><span class="line">//自己实现一个Symbol(深入问)</span><br></pre></td></tr></table></figure>
+<p>不管对象里存的是什么，执行.toString方法后都是[object Object]<br><img src="/ayla/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/Study_Vue/Vue(视频学习资料)/img/image-20220311010133771.png" alt="image-20220311010133771"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> a = &#123;&#125;,</span><br><span class="line">    b = &#123;</span><br><span class="line">        n: <span class="string">&#x27;1&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    c = &#123;</span><br><span class="line">        m: <span class="string">&#x27;2&#x27;</span></span><br><span class="line">    &#125;;</span><br><span class="line">a[b] = <span class="string">&#x27;珠峰&#x27;</span>;</span><br><span class="line">a[c] = <span class="string">&#x27;培训&#x27;</span>;</span><br><span class="line">console.log(a[b]);</span><br><span class="line">//培训，key会转化成字符串[Obejct object]</span><br><span class="line">//==&gt; Object.protopyte.toString / valueOf</span><br></pre></td></tr></table></figure>
+<h5 id="2、闭包作用域"><a href="#2、闭包作用域" class="headerlink" title="2、闭包作用域"></a>2、闭包作用域</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var <span class="built_in">test</span> = (<span class="keyword">function</span>(i)&#123;</span><br><span class="line"><span class="built_in">return</span> <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">alert (i*=2)；</span><br><span class="line">&#125;</span><br><span class="line">&#125;)(2);</span><br><span class="line"><span class="built_in">test</span>(5)</span><br><span class="line">//答案：‘4’，alert弹出的会转化成字符串</span><br><span class="line">//闭包：该销毁的不销毁才叫泄露</span><br></pre></td></tr></table></figure>
+<p><img src="/ayla/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/Study_Vue/Vue(视频学习资料)/img/image-20220311012113778.png" alt="image-20220311012113778"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var a = 0,b = 0;</span><br><span class="line"><span class="keyword">function</span> A(a)&#123;</span><br><span class="line">A = <span class="keyword">function</span> (b)&#123;</span><br><span class="line">alert(a + b++);</span><br><span class="line">&#125;;</span><br><span class="line">alert(a++);</span><br><span class="line">&#125;</span><br><span class="line">A(1);</span><br><span class="line">A(2);</span><br><span class="line">//答案：‘1’  ‘4’</span><br></pre></td></tr></table></figure>
+<p><img src="/ayla/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/Study_Vue/Vue(视频学习资料)/img/format,png.png" alt="image-20200602122452877"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-前端面试题（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
