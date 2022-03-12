@@ -24,8 +24,16 @@
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06elf8x7zj20et0a741o.jpg">
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06en2syv9j207x02zaao.jpg">
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06enpd45fj20fd05hq3r.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07ih64xrnj20l40aatek.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07ijpd2jwj20840ak77a.jpg">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vbXVzLXovYmxvZ0ltYWdlL3Jhdy9tYXN0ZXIvaW1nLzIwMjAwNjAyMTMxMDMzLnBuZw?x-oss-process=image/format,png">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07j7upwmnj208v036t8v.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07jr3vwm8j20b705p75b.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07jr3vwm8j20b705p75b.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07jvbmql1j20am09njss.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h07k4bzeh1j204x0220sl.jpg">
 <meta property="article:published_time" content="2022-03-10T07:06:42.000Z">
-<meta property="article:modified_time" content="2022-03-12T09:59:07.060Z">
+<meta property="article:modified_time" content="2022-03-12T16:19:54.777Z">
 <meta property="article:author" content="Ayla">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://tva1.sinaimg.cn/large/6929716cgy1h05bftns2rj20n109c0vy.jpg">
@@ -239,8 +247,21 @@
 <p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06elf8x7zj20et0a741o.jpg" alt="image.png"></p>
 <p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06en2syv9j207x02zaao.jpg" alt="image.png"></p>
 <p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06enpd45fj20fd05hq3r.jpg" alt="image.png"></p>
-<h5 id="4、一道面向对象的题"><a href="#4、一道面向对象的题" class="headerlink" title="4、一道面向对象的题"></a>4、一道面向对象的题</h5><p><strong>变量提升的概念</strong></p>
-
+<h5 id="4、一道面向对象的题（难）"><a href="#4、一道面向对象的题（难）" class="headerlink" title="4、一道面向对象的题（难）"></a>4、一道面向对象的题（难）</h5><p><strong>变量提升的概念</strong>：在js代码执行之前，将当前作用域，所有代码执行之前，把所有带var和function关键字的提前声明和定义</p>
+<p>函数的prototype也属于一个引用类型值即对象，也存储在堆中</p>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h07ih64xrnj20l40aatek.jpg" alt="image.png"></p>
+<h5 id="5、Eventqueue（事件队列）-x2F-EventLoop-消息线程"><a href="#5、Eventqueue（事件队列）-x2F-EventLoop-消息线程" class="headerlink" title="5、Eventqueue（事件队列）&#x2F;EventLoop(消息线程)"></a>5、Eventqueue（事件队列）&#x2F;EventLoop(消息线程)</h5><p><strong>异步&#x2F;同步&#x2F;微任务&#x2F;宏任务</strong></p>
+<p><strong>js</strong>当中是怎么实现异步的：浏览器是多线程的，但JS是单线程的，浏览器只给了其一个线程来渲染，所以浏览器提供了事件队列，存放异步任务，事件队列分为微任务队列和宏任务队列，主线程里的任务执行完成之后再执行任务队列里的任务</p>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h07ijpd2jwj20840ak77a.jpg" alt="image.png"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vbXVzLXovYmxvZ0ltYWdlL3Jhdy9tYXN0ZXIvaW1nLzIwMjAwNjAyMTMxMDMzLnBuZw?x-oss-process=image/format,png" alt="image-20200602131032718"><br>PS：箭头函数与普通函数的区别：箭头函数是没有原型链的，不能被new；箭头函数没有构造函数；箭头函数里的this指向执行上下文的this</p>
+<h5 id="6、例题"><a href="#6、例题" class="headerlink" title="6、例题"></a>6、例题</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h07j7upwmnj208v036t8v.jpg" alt="image.png"><br>答案1：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var a=&#123;</span><br><span class="line">    i:0,</span><br><span class="line">    <span class="function"><span class="title">toString</span></span> ()&#123;</span><br><span class="line">       <span class="built_in">return</span> ++this.i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//对象==字符串，对象.toString（）变为字符串</span><br><span class="line">//null == undefined 相等，但是和其它值比较就不再相等</span><br><span class="line">//NaN == NaN 不相等</span><br><span class="line">//剩下的跟数字比较都是转换为数字eg:[10] = 10,先执行[10].toString(),再Number（<span class="string">&quot;10&quot;</span>）,把数组的[10]转换为数字再判断相等，toString也可以换成valueOf</span><br></pre></td></tr></table></figure>
+<p>答案2：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = [1,2,3];</span><br><span class="line"><span class="keyword">if</span>(a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3)&#123;</span><br><span class="line">console.log(<span class="string">&#x27;条件成立&#x27;</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>答案3：数据劫持<br><img src="http://tva1.sinaimg.cn/large/6929716cly1h07jr3vwm8j20b705p75b.jpg" alt="image.png"><br>答案4：数据弹出<br><img src="http://tva1.sinaimg.cn/large/6929716cly1h07jr3vwm8j20b705p75b.jpg" alt="image.png"></p>
+<h5 id="7、例题"><a href="#7、例题" class="headerlink" title="7、例题"></a>7、例题</h5><p><img src="http://tva1.sinaimg.cn/large/6929716cly1h07jvbmql1j20am09njss.jpg" alt="image.png"></p>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h07k4bzeh1j204x0220sl.jpg" alt="image.png"></p>
+<h5 id="8、Vue2-0-x2F-Vue3-0的双向绑定原理"><a href="#8、Vue2-0-x2F-Vue3-0的双向绑定原理" class="headerlink" title="8、Vue2.0&#x2F;Vue3.0的双向绑定原理"></a>8、Vue2.0&#x2F;Vue3.0的双向绑定原理</h5>
       
 
       
@@ -381,7 +402,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JS%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、JS篇（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1、堆栈内存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E9%97%AD%E5%8C%85%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2、闭包作用域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D-x2F-%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">3、浅拷贝&#x2F;深拷贝</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4%E3%80%81%E4%B8%80%E9%81%93%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%A2%98"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">4、一道面向对象的题</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JS%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、JS篇（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1、堆栈内存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E9%97%AD%E5%8C%85%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2、闭包作用域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D-x2F-%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">3、浅拷贝&#x2F;深拷贝</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4%E3%80%81%E4%B8%80%E9%81%93%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%A2%98%EF%BC%88%E9%9A%BE%EF%BC%89"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">4、一道面向对象的题（难）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5%E3%80%81Eventqueue%EF%BC%88%E4%BA%8B%E4%BB%B6%E9%98%9F%E5%88%97%EF%BC%89-x2F-EventLoop-%E6%B6%88%E6%81%AF%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">5、Eventqueue（事件队列）&#x2F;EventLoop(消息线程)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6%E3%80%81%E4%BE%8B%E9%A2%98"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">6、例题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7%E3%80%81%E4%BE%8B%E9%A2%98"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">7、例题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8%E3%80%81Vue2-0-x2F-Vue3-0%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86"><span class="toc-number">1.0.0.8.</span> <span class="toc-text">8、Vue2.0&#x2F;Vue3.0的双向绑定原理</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
