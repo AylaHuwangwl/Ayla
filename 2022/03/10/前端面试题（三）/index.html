@@ -19,8 +19,13 @@
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cgy1h05bixxvw1j20d50h6dis.jpg">
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cgy1h05bjbtwhdj20xe0gktel.jpg">
 <meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cgy1h05bjjpvwzj20jt0ag0vn.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06c2ao5ecj20ar03vdg6.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06dy0jw2vj20i10afabi.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06elf8x7zj20et0a741o.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06en2syv9j207x02zaao.jpg">
+<meta property="og:image" content="http://tva1.sinaimg.cn/large/6929716cly1h06enpd45fj20fd05hq3r.jpg">
 <meta property="article:published_time" content="2022-03-10T07:06:42.000Z">
-<meta property="article:modified_time" content="2022-03-10T17:52:10.977Z">
+<meta property="article:modified_time" content="2022-03-12T09:59:07.060Z">
 <meta property="article:author" content="Ayla">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://tva1.sinaimg.cn/large/6929716cgy1h05bftns2rj20n109c0vy.jpg">
@@ -209,6 +214,32 @@
 <p><img src="http://tva1.sinaimg.cn/large/6929716cgy1h05bjbtwhdj20xe0gktel.jpg" alt="image.png"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var a = 0,b = 0;</span><br><span class="line"><span class="keyword">function</span> A(a)&#123;</span><br><span class="line">A = <span class="keyword">function</span> (b)&#123;</span><br><span class="line">alert(a + b++);</span><br><span class="line">&#125;;</span><br><span class="line">alert(a++);</span><br><span class="line">&#125;</span><br><span class="line">A(1);</span><br><span class="line">A(2);</span><br><span class="line">//答案：‘1’  ‘4’</span><br></pre></td></tr></table></figure>
 <p><img src="http://tva1.sinaimg.cn/large/6929716cgy1h05bjjpvwzj20jt0ag0vn.jpg" alt="image.png"></p>
+<h5 id="3、浅拷贝-x2F-深拷贝"><a href="#3、浅拷贝-x2F-深拷贝" class="headerlink" title="3、浅拷贝&#x2F;深拷贝"></a>3、浅拷贝&#x2F;深拷贝</h5><ul>
+<li>浅拷贝：只是拷贝一层，更深层次对象级别的只拷贝引用，如果被拷贝的对象里有另一个对象，拷贝的时候只拷贝地址，修改其中一个，另一个也会改变</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//pink老师课程</span><br><span class="line">var obj = &#123;</span><br><span class="line">        <span class="built_in">id</span>: 1,</span><br><span class="line">        name: <span class="string">&#x27;张三&#x27;</span>,</span><br><span class="line">        msg: &#123;</span><br><span class="line">            <span class="built_in">id</span>: 2,</span><br><span class="line">            name: <span class="string">&#x27;李四&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    var o = &#123;&#125;;</span><br><span class="line">    // 把obj里的内容拷贝到o对象里，遍历</span><br><span class="line">    <span class="keyword">for</span> (var k <span class="keyword">in</span> obj) &#123;</span><br><span class="line">        o[k] = obj[k];</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(o);</span><br><span class="line">    // 修改o里msg对象的<span class="built_in">id</span>，结果obj里的msg对象的<span class="built_in">id</span>也改了</span><br><span class="line">    o.msg.id = 3;</span><br><span class="line">    console.log(obj.msg.id);</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    //ES6语法实现浅拷贝</span><br><span class="line">    <span class="built_in">let</span> o = &#123;</span><br><span class="line">      ...obj</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06c2ao5ecj20ar03vdg6.jpg" alt="image.png"></p>
+<p> <img src="http://tva1.sinaimg.cn/large/6929716cly1h06dy0jw2vj20i10afabi.jpg" alt="image.png"></p>
+<p>浅拷贝的语法糖：<code>Object.assign(o,obj);</code></p>
+<ul>
+<li><p>深拷贝：先遍历外面的数据，再遍历里面的数据，可以用函数递归的方式</p>
+<p>判断某个值是否是数组或者是对象 </p>
+<p>法1、用 instanceOf ,数组也属于对象: <code>var arr = []; console.log( arr instanceof Onject )</code>打印结果为true</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">//pink老师课程</span><br><span class="line">var obj = &#123;</span><br><span class="line">            id : 1,</span><br><span class="line">            name:&#x27;andy&#x27;,</span><br><span class="line">            msg:&#123;</span><br><span class="line">                age:18,</span><br><span class="line">                weight:&#x27;88kg&#x27;</span><br><span class="line">            &#125;,</span><br><span class="line">            color:[&#x27;pink&#x27;,&#x27;red&#x27;]</span><br><span class="line">        &#125;;</span><br><span class="line">        var o = &#123;&#125;;</span><br><span class="line">        function deepCopy(newObj,oldObj)&#123;</span><br><span class="line">            for( var k in oldObj)&#123;</span><br><span class="line">                //判断属性值属于哪种数据类型</span><br><span class="line">                //1、获取属性值 oldObj[k]</span><br><span class="line">                var item = oldObj[k];</span><br><span class="line">                //2、判断这个值是否是数组</span><br><span class="line">                if(item instanceof Array)&#123;</span><br><span class="line">                    newObj[k] = [];</span><br><span class="line">                    deepCopy(newObj[k],item)</span><br><span class="line">                &#125;else if(item instanceof Object)&#123;</span><br><span class="line">                    //3、判断这个值是否是对象</span><br><span class="line">                    newObj[k] = &#123;&#125;;</span><br><span class="line">                    deepCopy(newObj[k],item)</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    //4、属于简单数据类型</span><br><span class="line">                    newObj[k] = item;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>法2、<strong>我们可以使用 JSON.parse() 方法将数据转换为 JavaScript 对象，所以浅拷贝除了用递归函数还可以有另一种方法：先将对象转换为字符串，在将该字符串转换为对象得到新的对像，但如果原先的对象中有正则表达式，转换为字符串后正则表达式会变成空对象</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//oldObj:有基本数据类型，有对象，有数组，(不能有正则表达式，有函数，有事件对象)</span><br><span class="line">let obj2 = JSON.prase(JSON.stringify(obj));</span><br><span class="line">//弊端：对函数、正则、时间对象、数字对象的时候会不好用</span><br></pre></td></tr></table></figure>
+<p>法3、<strong>obj.hasOwnProperty(prop)</strong></p>
+<blockquote>
+<p>这个方法可以用来检测一个对象是否含有特定的自身属性<br>语法：obj.hasOwnProperty(prop)<br>参数：要检测的属性 字符串 名称或者 Symbol<br>返回值： 用来判断某个对象是否含有指定的属性的 Boolean</p>
+</blockquote>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06elf8x7zj20et0a741o.jpg" alt="image.png"></p>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06en2syv9j207x02zaao.jpg" alt="image.png"></p>
+<p><img src="http://tva1.sinaimg.cn/large/6929716cly1h06enpd45fj20fd05hq3r.jpg" alt="image.png"></p>
+<h5 id="4、一道面向对象的题"><a href="#4、一道面向对象的题" class="headerlink" title="4、一道面向对象的题"></a>4、一道面向对象的题</h5><p><strong>变量提升的概念</strong></p>
 
       
 
@@ -312,6 +343,15 @@
   
 <nav id="article-nav">
   
+    <a href="/ayla/2022/03/12/js%E7%89%882048%E5%B0%8F%E6%B8%B8%E6%88%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          js版2048小游戏
+        
+      </div>
+    </a>
+  
   
     <a href="/ayla/2022/03/09/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">前端面试题（二）</div>
@@ -341,7 +381,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JS%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、JS篇（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1、堆栈内存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E9%97%AD%E5%8C%85%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2、闭包作用域</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JS%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、JS篇（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1、堆栈内存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E9%97%AD%E5%8C%85%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2、闭包作用域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D-x2F-%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">3、浅拷贝&#x2F;深拷贝</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4%E3%80%81%E4%B8%80%E9%81%93%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%A2%98"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">4、一道面向对象的题</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
