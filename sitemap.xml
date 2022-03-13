@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://huangwanling.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    
+    <lastmod>2022-03-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://huangwanling.gitee.io/ayla/2022/03/10/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9JS%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
     
     <lastmod>2022-03-13</lastmod>
@@ -32,15 +41,6 @@
     <loc>https://huangwanling.gitee.io/ayla/2022/03/12/js%E7%89%882048%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
     
     <lastmod>2022-03-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://huangwanling.gitee.io/ayla/2022/03/09/supermarket%E9%A1%B9%E7%9B%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
-    
-    <lastmod>2022-03-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
